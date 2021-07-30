@@ -1,0 +1,26 @@
+CREATE TABLE table_name (column_name column_type);oot@host# mysql -u //root@host# mysql -u root -p
+
+mysql> CREATE TABLE employees_tbl(
+   -> Employee_ID INT NOT NULL AUTO_INCREMENT,
+   -> PRIMARY KEY (Employee_ID )
+   -> employee_First name VARCHAR(40) NOT NULL,
+   -> employee_Last name VARCHAR(50) NOT NULL,
+   -> employee_Address_1 VARCHAR(100) NOT NULL,
+   -> employee_Address_2 VARCHAR(100),
+   -> employee_State VARCHAR(40) NOT NULL,
+   -> employee_Zipcode VARCHAR(15) NOT NULL,
+   -> employee_Email  VARCHAR(100) NOT NULL,
+   -> employee_Phone number VARCHAR(40) NOT NULL,
+   -> employee_Role  VARCHAR(100), //Associate, Manager, Administrator.
+   -> );
+mysql>
+
+mysql> CREATE TABLE _tbl(
+   -> Employee_ID INT NOT NULL AUTO_INCREMENT,
+   -> PRIMARY KEY (Employee_ID ) //fix and add a
+   -> contact_First name VARCHAR(40) NOT NULL,
+   -> contact_Last name VARCHAR(50) NOT NULL,
+   -> contact_Phone number VARCHAR(40) NOT NULL,
+   -> contact_Relationship VARCHAR(100) NOT NULL, 
+   -> );
+mysql>

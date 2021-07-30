@@ -1,0 +1,23 @@
+CREATE TABLE contacts_emergency(
+   -> Contact_ID INT NOT NULL AUTO_INCREMENT,
+   -> PRIMARY KEY (Contact_ID ) 
+   -> contact_First name VARCHAR(40) NOT NULL,
+   -> contact_Last name VARCHAR(50) NOT NULL,
+   -> contact_Phone number VARCHAR(40) NOT NULL,
+   -> contact_Relationship VARCHAR(100) NOT NULL,
+   [CONSTRAINT constraint_name]
+FOREIGN KEY [foreign_key_name] 
+REFERENCES parent_table(colunm_name,...)
+[ON DELETE reference_option]
+[ON UPDATE reference_option]
+   -> );
+   
+   CONSTRAINT fk_employees FOREIGN KEY (Employee_ID)
+REFERENCES employees[Employee_ID]
+        ON UPDATE CASCADE
+        ON DELETE CASCADE
+		
+ALTER TABLE table_name 
+ADD CONSTRAINT fk_employees
+FOREIGN KEY (Employee_ID) 
+REFERENCES employees[Employee_ID];
